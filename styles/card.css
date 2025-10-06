@@ -32,10 +32,12 @@
 
   & h3 {
     font: var(--text-preset-3);
+    color: var(--color-gray-500);
   }
 
   & p {
     font: var(--text-preset-5);
+    color: var(--color-gray-400);
   }
 }
 
