@@ -1,4 +1,10 @@
 .card-wrapper {
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4";
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -33,17 +39,33 @@
 }
 
 .card-1 {
+  grid-area: card1;
   border-top: solid 3px var(--color-cyan);
 }
 
 .card-2 {
+  grid-area: card2;
   border-top: solid 3px var(--color-red);
 }
 
 .card-3 {
+  grid-area: card3;
   border-top: solid 3px var(--color-orange);
 }
 
 .card-4 {
+  grid-area: card4;
   border-top: solid 3px var(--color-blue);
+}
+
+@media (width >= 48em) {
+  .card-wrapper {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "card2 card2"
+      "card1 card3"
+      "card4 card4";
+    align-items: center;
+    justify-items: center;
+  }
 }
