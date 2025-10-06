@@ -1,0 +1,49 @@
+.card-wrapper {
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2.875rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  width: 19.625rem;
+  height: 15.625;
+  background-color: var(--color-white);
+
+  & img {
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-bottom: 2.9375rem;
+  }
+}
+
+.card-title {
+  padding: 2rem;
+
+  & h3 {
+    font: var(--text-preset-3);
+  }
+
+  & p {
+    font: var(--text-preset-5);
+  }
+}
+
+.card-1 {
+  border-top: solid 3px var(--color-cyan);
+}
+
+.card-2 {
+  border-top: solid 3px var(--color-red);
+}
+
+.card-3 {
+  border-top: solid 3px var(--color-orange);
+}
+
+.card-4 {
+  border-top: solid 3px var(--color-blue);
+}
